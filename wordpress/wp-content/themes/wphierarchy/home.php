@@ -1,13 +1,15 @@
 <?php get_header('splash'); ?>
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+        <?php wp_title(); ?>
         <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
            <?php get_template_part('template-parts/content', 'posts'); ?>
         <?php endwhile; else: ?>
             <?php get_template_part('template-parts/content', 'none'); ?>
         <?php endif; ?>
+        <?php paginate_links(); ?>
 
-        <p>Template singular.php</p>
+        <p>Template home.php</p>
     </main>
 </div>
 

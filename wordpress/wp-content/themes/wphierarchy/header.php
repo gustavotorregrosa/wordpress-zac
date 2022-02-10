@@ -31,6 +31,11 @@
                     'theme_location' => 'main-menu'
                 ]) ?>
             </nav>
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <?php wp_nav_menu([
+                    'theme_location' => 'category-menu'
+                ]) ?>
+            </nav>
         </header>
 
 

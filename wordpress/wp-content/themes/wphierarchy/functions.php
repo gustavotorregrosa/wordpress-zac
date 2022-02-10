@@ -2,7 +2,7 @@
 
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
-    add_theme_support('post_format', [
+    add_theme_support('post-formats', [
         'aside',
         'gallery',
         'link',
@@ -30,6 +30,7 @@
 
     register_nav_menus([
         'main-menu' => esc_html__('Main Menu', 'wphierarchy'),
+        'category-menu' => esc_html__('Category Menu', 'wphierarchy'),
     ]);
 
     function wphierarchy_widgets_init(){
@@ -41,8 +42,9 @@
             'after_widget'  => '</section>',
             'before_title'  => '<h2 class="widget-title">',
             'after_title'   => '</h2>',
-            
         ]);
+
+
     }
 
     add_action('widgets_init', 'wphierarchy_widgets_init');
