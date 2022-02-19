@@ -10,7 +10,7 @@
         <?php endif; ?>
      
 
-        <p>Template archive.php</p>
+        <p>Template taxonomy-skills.php</p>
     </main>
 </div>
 
